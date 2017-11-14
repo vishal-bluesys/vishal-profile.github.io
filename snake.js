@@ -30,12 +30,16 @@ function Snake() {
       if (d < 1) {
 		  alert("Snake Died , Game Over Click Ok For New Game")
 
-        this.total = 0;
-        this.tail = [];
-		if(highScore < this.total){
+        
+		//console.log(highScore);
+		
+		if(Number(this.total) > Number(highScore)){
 			document.getElementById('highScore').innerHTML = this.total;
 			highScore = this.total;
+			console.log(highScore);
 		}
+		this.total = 0;
+        this.tail = [];
 		document.getElementById('score').innerHTML = this.total;
       }
     }
