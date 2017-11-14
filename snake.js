@@ -32,6 +32,10 @@ function Snake() {
 
         this.total = 0;
         this.tail = [];
+		if(highScore < this.total){
+			document.getElementById('highScore').innerHTML = this.total;
+			highScore = this.total;
+		}
 		document.getElementById('score').innerHTML = this.total;
       }
     }

@@ -1,7 +1,9 @@
 var s;
 var scl = 20;
-
+var highScore = 0;
 var food;
+
+document.getElementById('highScore').innerHTML = highScore;
 
 function setup() {
   createCanvas(600, 600);
